@@ -6,6 +6,62 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
   <title>Joshua Anderson | Electrical Engineering</title>
+ 
+.hero {
+  padding: 130px 20px;
+  text-align: center;
+  background: radial-gradient(
+    circle at top,
+    #203d56 0%,
+    #101820 65%
+  );
+}
+
+.intro-label {
+  color: #82bfff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  margin-bottom: 5px;
+}
+
+.hero h2 {
+  color: #b9c3d1;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 30px auto;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary-button {
+  display: inline-block;
+  padding: 14px 25px;
+  border: 1px solid #82bfff;
+  border-radius: 6px;
+  color: #82bfff;
+  text-decoration: none;
+}
+
+.secondary-button:hover {
+  background: #1d2b38;
+}
+
   <style>
   /* Your existing CSS code is here */
 
@@ -82,16 +138,41 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="home">
-    <h1>Joshua Anderson</h1>
-    <h2>Electrical Engineering Student</h2>
-    <p>
-      University of Texas at San Antonio
-    </p>
+
+<section id="home" class="hero">
+
+  <p class="intro-label">
+    ELECTRICAL ENGINEERING STUDENT | UTSA
+  </p>
+
+  <h1>Joshua Anderson</h1>
+
+  <h2>
+    Aspiring Electrical Engineer
+  </h2>
+
+  <p class="hero-description">
+    I'm an electrical engineering student at the
+    University of Texas at San Antonio, developing
+    practical skills in circuit design, embedded
+    systems, programming, and electronics.
+
+    This portfolio documents my projects,
+    engineering challenges, and what I learn
+    along the way.
+  </p>
+
+  <div class="hero-buttons">
     <a class="button" href="#projects">
-      View My Projects
+      Explore My Projects
     </a>
-  </section>
+
+    <a class="secondary-button" href="#about">
+      More About Me
+    </a>
+  </div>
+
+</section>
 
   <section id="about">
     <h2>About Me</h2>
