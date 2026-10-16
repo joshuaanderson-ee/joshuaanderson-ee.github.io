@@ -7,6 +7,28 @@
         content="width=device-width, initial-scale=1">
   <title>Joshua Anderson | Electrical Engineering</title>
   <style>
+  /* Your existing CSS code is here */
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: left;
+  }
+
+  .project-card {
+    background: #1d2b38;
+    padding: 25px;
+    border: 1px solid #344657;
+    border-radius: 12px;
+  }
+
+  /* The rest of your new CSS goes here */
+
+</style>
+  <style>
     body {
       background: #101820;
       color: white;
@@ -80,12 +102,61 @@
     </p>
   </section>
 
-  <section id="projects">
-    <h2>My Engineering Projects</h2>
-    <p>
-      Projects coming soon!
-    </p>
-  </section>
+ 
+<section id="projects">
+  <h2>My Engineering Projects</h2>
+  <p>
+    Follow my progress as I develop practical
+    electrical engineering skills.
+  </p>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Electronics Fundamentals Lab</h3>
+      <p>Circuits, voltage measurements, and troubleshooting.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>RC Circuit Simulation</h3>
+      <p>Using LTspice and Python to analyze circuits.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Arduino Night-Light</h3>
+      <p>Building an automatic lighting system with sensors.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Digital Temperature Monitor</h3>
+      <p>Reading sensor data using I2C communication.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Custom PCB Design</h3>
+      <p>Designing a printed circuit board using KiCad.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Electrical CAD Floor Plan</h3>
+      <p>Creating professional electrical drawings.</p>
+      <span>Planned</span>
+    </div>
+
+    <div class="project-card">
+      <h3>DC Power Testing</h3>
+      <p>Measuring voltage, current, and power efficiency.</p>
+      <span>Planned</span>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
