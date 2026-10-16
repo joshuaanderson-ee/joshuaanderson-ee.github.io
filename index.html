@@ -126,13 +126,47 @@
       text-decoration: none;
       display: inline-block;
     }
-  </style>
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.skill-card {
+  background: #1d2b38;
+  border: 1px solid #344657;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.skill-card h3 {
+  color: #82bfff;
+  margin-top: 0;
+}
+
+.skill-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  
+</style>
 </head>
 <body>
 
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -190,7 +224,51 @@
   </section>
 
  
-<section id="projects">
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <p>
+    Technologies and engineering skills
+    I'm currently learning and developing.
+  </p>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Circuit Design</h3>
+      <p>Basic circuits, Ohm's Law, and electrical measurements</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python and Arduino programming</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Circuit Simulation</h3>
+      <p>LTspice and circuit analysis</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>PCB Design</h3>
+      <p>KiCad schematic capture and PCB layout</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Embedded Systems</h3>
+      <p>Microcontrollers, sensors, and digital communication</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Technical Documentation</h3>
+      <p>Engineering reports, diagrams, and test results</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="projects">
   <h2>My Engineering Projects</h2>
   <p>
     Follow my progress as I develop practical
