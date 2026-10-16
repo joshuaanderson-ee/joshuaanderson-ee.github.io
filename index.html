@@ -159,6 +159,62 @@
   }
 }
   
+
+/* Project status labels */
+
+.project-status {
+  display: inline-block;
+  background: #243c4f;
+  color: #82bfff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Blue project buttons */
+
+.project-button {
+  display: inline-block;
+  background: #82bfff;
+  color: #101820;
+  padding: 11px 20px;
+  margin-top: 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.project-button:hover {
+  background: #b1d7ff;
+}
+
+/* Project card layout */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.project-card p {
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+.project-card .project-button {
+  margin-top: auto;
+}
+
 </style>
 </head>
 <body>
@@ -268,66 +324,119 @@
   </div>
 </section>
 
-  <section id="projects">
+
+<section id="projects">
   <h2>My Engineering Projects</h2>
+
   <p>
-    Follow my progress as I develop practical
-    electrical engineering skills.
+    My collection of hands-on electrical engineering
+    projects, documenting my progress in electronics,
+    programming, circuit design, and testing.
   </p>
 
   <div class="project-grid">
 
-
-<div class="project-card">
-  <h3>Electronics Fundamentals Lab</h3>
-  <p>
-    Circuits, voltage measurements,
-    and troubleshooting.
-  </p>
-  <a href="electronics-fundamentals.html">
-    View Project →
-  </a>
-</div>
-
-
+    <!-- PROJECT 1 -->
     <div class="project-card">
+      <span class="project-status">PLANNED</span>
+      <h3>Electronics Fundamentals Lab</h3>
+      <p>
+        Building and testing basic electrical circuits,
+        measuring voltage and current, and learning
+        troubleshooting techniques.
+      </p>
+      <a class="project-button" href="electronics-fundamentals.html">
+        View Project →
+      </a>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <span class="project-status">PLANNED</span>
       <h3>RC Circuit Simulation</h3>
-      <p>Using LTspice and Python to analyze circuits.</p>
-<a href="rc-circuit-simulation.html">View Project →</a>
+      <p>
+        Using LTspice and Python to simulate RC circuits,
+        analyze frequency response, and compare
+        theoretical and simulated results.
+      </p>
+      <a class="project-button" href="rc-circuit-simulation.html">
+        View Project →
+      </a>
     </div>
 
+    <!-- PROJECT 3 -->
     <div class="project-card">
-      <h3>Arduino Night-Light</h3>
-      <p>Building an automatic lighting system with sensors.</p>
-<a href="arduino-night-light.html">View Project →</a>
+      <span class="project-status">PLANNED</span>
+      <h3>Arduino Automatic Night-Light</h3>
+      <p>
+        Designing an Arduino-controlled lighting system
+        that responds automatically to changes in
+        ambient brightness.
+      </p>
+      <a class="project-button" href="arduino-night-light.html">
+        View Project →
+      </a>
     </div>
 
+    <!-- PROJECT 4 -->
     <div class="project-card">
+      <span class="project-status">PLANNED</span>
       <h3>Digital Temperature Monitor</h3>
-      <p>Reading sensor data using I2C communication.</p>
-<a href="temperature-monitor.html">View Project →</a>
+      <p>
+        Creating a microcontroller-based temperature
+        monitoring system using an I2C sensor,
+        data collection, and Arduino programming.
+      </p>
+      <a class="project-button" href="temperature-monitor.html">
+        View Project →
+      </a>
     </div>
 
+    <!-- PROJECT 5 -->
     <div class="project-card">
+      <span class="project-status">PLANNED</span>
       <h3>Custom PCB Design</h3>
-      <p>Designing a printed circuit board using KiCad.</p>
-<a href="custom-pcb.html">View Project →</a>
+      <p>
+        Learning KiCad to develop circuit schematics,
+        design a printed circuit board, and verify
+        component placement and routing.
+      </p>
+      <a class="project-button" href="custom-pcb.html">
+        View Project →
+      </a>
     </div>
 
+    <!-- PROJECT 6 -->
     <div class="project-card">
+      <span class="project-status">PLANNED</span>
       <h3>Electrical CAD Floor Plan</h3>
-      <p>Creating professional electrical drawings.</p>
-<a href="electrical-cad.html">View Project →</a>
+      <p>
+        Creating electrical layout drawings with
+        lighting fixtures, switches, receptacles,
+        and technical drafting conventions.
+      </p>
+      <a class="project-button" href="electrical-cad.html">
+        View Project →
+      </a>
     </div>
 
+    <!-- PROJECT 7 -->
     <div class="project-card">
-      <h3>DC Power Testing</h3>
-      <p>Measuring voltage, current, and power efficiency.</p>
-<a href="dc-power-testing.html">View Project →</a>
+      <span class="project-status">PLANNED</span>
+      <h3>DC Power Supply Testing</h3>
+      <p>
+        Investigating voltage regulation,
+        electrical measurements, load testing,
+        and DC power calculations.
+      </p>
+      <a class="project-button" href="dc-power-testing.html">
+        View Project →
+      </a>
     </div>
 
   </div>
 </section>
+
 
 
   <section id="contact">
